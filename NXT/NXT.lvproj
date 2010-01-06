@@ -13,6 +13,7 @@
       <Item Name="NXT" Type="Folder" URL="">
          <Property Name="NI.DISK" Type="Bool">true</Property>
       </Item>
+      <Item Name="P controller.vi" Type="VI" URL="PID/P controller.vi"/>
       <Item Name="Dependencies" Type="Dependencies">
          <Item Name="vi.lib" Type="Folder">
             <Item Name="NXT_RotationSensor.vi" Type="VI" URL="/&lt;vilib&gt;/addons/NXTToolkit/Library VIs/Rotation Sensor/NXT_RotationSensor.vi"/>
@@ -35,9 +36,8 @@
             <Item Name="NXT_DisplayText.vi" Type="VI" URL="/&lt;vilib&gt;/addons/NXTToolkit/Library VIs/Display/NXT_DisplayText.vi"/>
             <Item Name="NXTSyscallRefnum.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/NXTToolkit/NXT Controls/NXTSyscallRefnum.ctl"/>
             <Item Name="NXT_Wait.vi" Type="VI" URL="/&lt;vilib&gt;/addons/NXTToolkit/Library VIs/Wait/NXT_Wait.vi"/>
+            <Item Name="NXTInputOutput.dll" Type="Document" URL="/&lt;vilib&gt;/addons/NXTToolkit/shared/NXTInputOutput/NXTInputOutput.dll"/>
          </Item>
-         <Item Name="NXTInputOutput.rc" Type="Document" URL="/c/program files/national instruments/labview 8.5/resource/objmgr/NXTInputOutput.rc"/>
-         <Item Name="NXTSemaphore.rc" Type="Document" URL="/c/program files/national instruments/labview 8.5/resource/objmgr/NXTSemaphore.rc"/>
       </Item>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="NXT" Type="Source Distribution">
