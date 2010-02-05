@@ -1,0 +1,7 @@
+I think you are on the right track. The blob detection, or particle analysis as it is also called, can return a huge number of measurements and is very fast once you have the binary image.
+
+I've played with this a bit, and it is helpful to play with a few discrete things.
+
+First, it is useful to find filters that will clean up the image. In particular, you can probably filter out all small particles. This is often a good first step. Second, the balls punch a pretty good circular hole in the carpet color, but since balls cast shadows they will rarely make a perfectly circular hole. Anyway, it may be necessarily to perform one of the morphology steps like an open or close -- which is built on erode and a dilate cycles. Either play with these in the script or read the concept manual for more detail on when to use them and how they work.
+
+Finally, if you measure terms like the Heywood circularity and perimeter and area. If you lay out balls on the carpet and get some sample images, you can view these measurements to find some factors that are unique to round objects. If you need more info, just ask.
